@@ -1,23 +1,7 @@
-function googleSearch() {
-    const val = document.getElementById('search').value
-    window.open(
-      (isURL(val) ? '' :
-        'https://google.com/search?q=') + val,
-        "_self")
-  }
+
 
   
-  document.onkeypress = function (e) {
-    var key = e.charCode || e.keyCode
   
-    if(key == '13'){
-      const val = document.getElementById('search').value
-      window.open(
-        (isURL(val) ? '' :
-          'https://google.com/search?q=') + val,
-          "_self")          
-   }
-  };
   
   function isURL(url) {
     try {
@@ -28,14 +12,7 @@ function googleSearch() {
     }
   }
 
-function luckySearch(){
-    const val2 = document.getElementById('search').value;
-    if(val2 == ''){
-        window.open('https://www.google.com/doodles',"_self");
-    }else if (val2 != ''){
-        window.open('https://google.com/search?q=' + val2,"_self");
-    }
-}
+
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
